@@ -10,7 +10,8 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position:relative;
+  scroll-behavior: smooth;
+  overflow: scroll;
 }
 
 /*merch picture*/
@@ -21,11 +22,40 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position:relative;
+  scroll-behavior: smooth;
+  overflow: scroll;
 }
 
-/*text*/
-.color_text {
+/*cart picture*/
+.bg_cart {
+  background-image: url("cart.png");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+/*texts*/
+.order {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
   color: rebeccapurple;
+
+}
+
+.desp {
+  font-weight: bold;
+  color: rebeccapurple;
+  order-style: outset;
+}
+
+.bold {
+  font-weight: bold;
+  color: darkviolet;
 }
 
 /*Navigation bar*/
@@ -68,8 +98,9 @@ body {
 }
 
 .price {
-  color: grey;
+  color: plum;
   font-size: 22px;
+  font-weight: bold;
 }
 
 .card button {
@@ -87,3 +118,54 @@ body {
 .card button:hover {
   opacity: 0.7;
 }
+
+/*gallery*/
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 50%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: darkviolet;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 200%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
