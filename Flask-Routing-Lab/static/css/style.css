@@ -10,6 +10,22 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position:relative;
+}
+
+/*merch picture*/
+.bg_merch {
+  background-image: url("merch.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+}
+
+/*text*/
+.color_text {
+  color: rebeccapurple;
 }
 
 /*Navigation bar*/
@@ -40,4 +56,34 @@ body {
 .topnav a.active {
   background-color: rebeccapurple;
   color: blueviolet;
+}
+
+/*the add cart*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: rebeccapurple;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }
